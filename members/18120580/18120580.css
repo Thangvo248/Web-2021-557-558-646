@@ -1,0 +1,126 @@
+/* Reset CSS */
+*{  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main{
+
+}
+#header{
+    position: fixed;
+    top:  0;
+    right: 0;
+    left: 0;
+    height: 64px;
+    background-color: #000;
+    z-index: 1;
+}
+#nav, .subnav{
+    list-style-type: none;
+}
+#nav > li{
+    display: inline-block;
+}
+#nav li{
+   position: relative;
+   
+}
+
+#nav > li> a{
+    color: #fff;
+    text-transform:uppercase;
+}
+#nav li a{
+    text-decoration: none;
+    line-height: 64px;
+    padding: 0 24px;
+    display: block;
+}
+#nav li:hover .subnav{
+    display: block;
+    
+
+}
+/*#nav .subnav li:hover {
+    color: #000;
+    background-color: #ccc;
+}*/
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav{
+    display: none;
+    position:absolute;
+    min-width: 160px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0, 0, 0.5);
+}
+#nav .subnav a{
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#slider{
+    position: relative;
+    margin-top: 64px;
+    padding-top: 50%;
+    background: url('./Image/Tho-Background.jpg') top center / cover no-repeat ;
+}
+
+#slider .text-slide{
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    left: 50%;
+    transform:  translateX(-50%);
+    text-align: center;
+}
+#slider .text-title{
+    font-weight: 700;
+    font-size: 24px;
+
+}
+#slider .text-des{
+    font-size: 15px;
+    margin-top: 25px;
+}
+#slider .member-info{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    color: #fff;
+    text-align: left;
+    
+}
+#slider .member-img{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+#slider .member-info p,
+#slider .member-info h1,
+#slider .member-info a{
+    font-size: 48px;
+    margin-top: 28px;
+}
+#slider .member-info a{
+    text-decoration: none;
+    color:#fff;
+}
+#footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 32px;
+    background-color: #ccc;
+    z-index: 1;
+}
